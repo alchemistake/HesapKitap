@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.alchemistake.hesapkitap.app.activities.AddActivity">
+    <item android:id="@+id/action_done"
+          android:icon="@drawable/ic_action_action_done"
+          android:title="Done"
+          app:showAsAction="ifRoom" />
+</menu>

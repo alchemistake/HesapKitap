@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.alchemistake.hesapkitap.app.activities.EditActivity">
+      <item android:id="@+id/action_done"
+            android:icon="@drawable/ic_action_action_done"
+            android:title="Done"
+            app:showAsAction="ifRoom" />
+      <item android:id="@+id/action_discard"
+            android:icon="@drawable/abc_ic_clear_mtrl_alpha"
+            android:title="Discard"
+            app:showAsAction="ifRoom" />
+</menu>

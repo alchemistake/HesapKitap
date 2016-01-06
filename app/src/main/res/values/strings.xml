@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hesap Kitap</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add">Düzenle</string>
+    <string name="title_activity_edit">Düzenle</string>
+</resources>

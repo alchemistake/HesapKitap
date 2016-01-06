@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.alchemistake.hesapkitap.app.activities.AddActivity">
+    <item android:id="@+id/action_backward"
+          android:icon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+          android:title="Backward"
+          app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_forward"
+          android:icon="@drawable/forward_arrow"
+          android:title="Forward"
+          app:showAsAction="ifRoom" />
+</menu>
