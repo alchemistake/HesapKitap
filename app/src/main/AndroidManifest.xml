@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alchemistake.hesapkitap.app"
-          android:versionCode="1"
-          android:versionName="1.0.1">
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +29,30 @@
         <activity
             android:name=".activities.EditActivity"
             android:label="@string/title_activity_edit" >
+        </activity>
+        <activity
+            android:name=".dropbox.DropboxActivity"
+            android:label="@string/title_activity_dropbox" >
+        </activity>
+        <activity
+            android:name=".dropbox.SyncActivity"
+            android:label="@string/title_activity_sync" >
+        </activity>
+
+        <activity
+                android:name="com.dropbox.core.android.AuthActivity"
+                android:configChanges="orientation|keyboard"
+                android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-ktbt9tx57vmemrd" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

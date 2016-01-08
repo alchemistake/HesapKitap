@@ -5,4 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_add">Düzenle</string>
     <string name="title_activity_edit">Düzenle</string>
+    <string name="app_key">ktbt9tx57vmemrd</string>
+    <string name="app_secret">zi5xed45ivx1zzn</string>
+    <string name="title_activity_dropbox">Dropbox</string>
+    <string name="title_activity_sync">Senkronla</string>
 </resources>

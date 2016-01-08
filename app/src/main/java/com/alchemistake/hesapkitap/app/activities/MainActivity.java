@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,6 +17,7 @@ import com.alchemistake.hesapkitap.app.R;
 import com.alchemistake.hesapkitap.app.adapters.MovementAdapter;
 import com.alchemistake.hesapkitap.app.database.DataSource;
 import com.alchemistake.hesapkitap.app.database.Movement;
+import com.alchemistake.hesapkitap.app.dropbox.SyncActivity;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ScrollDirectionListener;
 
@@ -219,5 +221,15 @@ public class MainActivity extends ActionBarActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        // if button is menu button show Credits Page
+        if (keyCode == KeyEvent.KEYCODE_MENU) {
+            startActivity(new Intent(this, SyncActivity.class));
+            return true;
+        }
+        // if it is not do normal job of the key
+        return super.onKeyDown(keyCode, event);
     }
 }

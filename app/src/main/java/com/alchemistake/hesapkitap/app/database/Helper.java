@@ -16,7 +16,7 @@ public class Helper extends SQLiteOpenHelper {
     public static final String COLUMN_INCOME = "income";
     public static final String COLUMN_OUTCOME = "outcome";
 
-    private static final String DATABASE_NAME = "commments.db";
+    public static final String DATABASE_NAME = "commments.db";
     private static final int DATABASE_VERSION = 2;
 
     // Database creation sql statement
@@ -48,4 +48,5 @@ public class Helper extends SQLiteOpenHelper {
         db.execSQL("insert into " + TABLE_NAME + " select * from temp;");
         db.execSQL("drop table temp;");
     }
+
 }
